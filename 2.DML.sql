@@ -3,7 +3,7 @@ insert into 테이블명(컬럼1, 컬럼2, 컬럼3) values(데이터1, 데이터
 --문자열은 일반적으로 작은따옴표 사용
 insert into author(id, name, email) values(4, 'hongildong4', 'hongildong4@naver.com');
 
---update : 테이블에 데이터를 변경(where 조건 꼭 써야함)
+--update : 테이블에 데이터를 변경(where 조건 반드시 써야함)
 update author set name='홍길동', email='hong100@naver.com' where id=3;
 
 --delete : 데이터 삭제(where 조건 꼭 넣어야함)
@@ -54,5 +54,3 @@ select a.name, a.email from author a;
 --null을 조회조건으로 활용
 select * from author where password is null;
 select * from author where password is not null;
-
--- 프로그래머스 sql문제풀이(여러기준으로 정렬하기,상위 n개 레코드)
