@@ -1,4 +1,3 @@
-
 --case1 : author inner join post
 --글쓴적이 있는 글쓴이와 그 글쓴이가 쓴 글의 목록 출력
 select*from author inner join post on author.id = post.author_id;
@@ -93,3 +92,4 @@ select author_id from post group by author_id having count(*) >=2;
 --group by 첫번째 컬럼, 두번째 컬럼: 첫번째 컬럼으로 grouping이후에 두번째컬럼으로 grouping
 --post 테이블에서 작성자별로 구분하여 같은 제목의 글의 개수를 출력하시오
 select author_id,title,count(*)from post group by author_id,title;
+
