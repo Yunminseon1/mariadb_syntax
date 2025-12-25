@@ -81,4 +81,5 @@ select * from post where created_time like '2025-11%';
 
 --실습: 2025년 11월 1일부터 11월 19일까지의 데이터를 조회
 select * from post where created_time >= '2025-11-01'and created_time <'2025-11-20';
---created_time<='2025-11-19'는 안됨 -> 날짜 뒤에 시간초 등등이 00.00 이런식으로 붙는데 그렇게 되면 created_time이 클수밖에없음
+--created_time<='2025-11-19'는 안됨 -> 날짜 뒤에 시간초 등등이 00.00 이런식으로 붙는데 그렇게 되면 created_time이 클수밖에없다다
+
